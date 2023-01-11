@@ -6,6 +6,6 @@ def safe_print_division(a, b):
         print("No se puede dividir por cero.")
         result = None
     finally:
-        print("Inside Result: {}".format(result))
+        print("Inside Result: {:d}".format(result))
     return result
 
