@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-raise_exception(TypeError, "Invalid type")
-except TypeError as te:
-print(te)
-pass
+def raise_exception():
+    raise TypeError("This function raises a TypeError exception.")
+
