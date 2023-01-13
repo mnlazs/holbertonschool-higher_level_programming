@@ -20,6 +20,7 @@ def print_list_integer(my_list=[]):
 def replace_in_list(my_list, idx, element):
 def print_reversed_list_integer(my_list=[]):
 def new_in_list(my_list, idx, element):
+def no_c(my_string):
 
 size_t print_listint(const listint_t *h);
 listint_t *add_nodeint_end(listint_t **head, const int n);
