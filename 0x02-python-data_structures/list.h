@@ -21,8 +21,9 @@ def replace_in_list(my_list, idx, element):
 def print_reversed_list_integer(my_list=[]):
 def new_in_list(my_list, idx, element):
 def no_c(my_string):
+def print_listint(constx_integer(matrix=[[]]):
 
-size_t print_listint(const listint_t *h);
+size_tlistint_t *h);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
 int check_pal(listint_t **head, listint_t *last);
