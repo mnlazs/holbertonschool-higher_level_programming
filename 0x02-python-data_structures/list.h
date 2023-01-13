@@ -17,6 +17,7 @@ typedef struct listint_s
 } listint_t;
 
 def print_list_integer(my_list=[]):
+def replace_in_list(my_list, idx, element):
 size_t print_listint(const listint_t *h);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
