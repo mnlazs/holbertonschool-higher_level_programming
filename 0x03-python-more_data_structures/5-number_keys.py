@@ -1,3 +1,4 @@
 #!/usr/bin/python3
-for key in a_dictionary:
-    print(key)
+def number_keys(a_dictionary):
+    return len(a_dictionary.keys())
+
