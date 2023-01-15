@@ -7,7 +7,7 @@ A class that define a square by:
 """
     def __init__(self, size):
  """
-        Initialize the square with a given size
-        :param size: The size of the square (int or float)
-        """
+Initialize the square with a given size
+:param size: The size of the square (int or float)
+"""
     self.size = size
