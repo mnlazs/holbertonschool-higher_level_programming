@@ -1,9 +1,7 @@
-#!/usr/bin/python3
-"""Square Class
-This class don't do anything for the moment
-"""
+e!/ usr/bin/python3
+"""Square Class"""
 
 
 class Square:
- """ Empty Class """
-    pass
+    """ Empty Class """
+pass
