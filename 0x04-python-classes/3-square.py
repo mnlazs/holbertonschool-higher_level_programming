@@ -10,13 +10,13 @@ class Square:
 
     Attributes:
         size (:obj:`int`, optional): The size of the square.
-        
+
     Raises:
         TypeError: If `size` type is not `int`.
-            
+
         ValueError: If `size` is less than `0`.
-        
-    """   
+
+    """
 
     def __init__(self, size=0):
         self.size = size
@@ -35,4 +35,3 @@ class Square:
 
     def area(self):
         return self.size ** 2
-
