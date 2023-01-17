@@ -1,5 +1,23 @@
 #!/usr/bin/python3
+""" Square Class:defines a square by : (based on 2-square.py)
+"""
+
+
 class Square:
+    """__init__
+
+    The __init__ method initializes the size value of the square.
+
+    Attributes:
+        size (:obj:`int`, optional): The size of the square.
+        
+    Raises:
+        TypeError: If `size` type is not `int`.
+            
+        ValueError: If `size` is less than `0`.
+        
+    """   
+
     def __init__(self, size=0):
         self.size = size
 
