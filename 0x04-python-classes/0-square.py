@@ -3,7 +3,5 @@
 
 class Square:
     """ Empty Class """
-def init(self, size):
-self._size = size
-
-pass
+    def __init__(self, size):
+        self.__size = size
