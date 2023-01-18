@@ -1,12 +1,9 @@
 #!/usr/bin/python3
-"""
-Square Class: Define a Square with private instance
-"""
+"""Square Class: Define a Square with private instance"""
 
 
 class Square:
-    """ class Square that defines a square
-    """
+    """ class Square that defines a square"""
 
     def __init__(self, size=0):
         """ initialize variables """
@@ -18,7 +15,6 @@ class Square:
         self.__size = size
 
     def area(self):
-        """Funtion definition
-        """
+        """Funtion definition"""
 
     return self.__size ** 2
