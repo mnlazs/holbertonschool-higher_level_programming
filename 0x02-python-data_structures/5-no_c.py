@@ -1,4 +1,7 @@
-#!/usr/bin/env python3
+#!/usrebin/env python3
 def no_c(my_string):
-    return "".join([char for char in my_string if char.lower() != "c"])
-
+    ret = ""
+    for i in range(len(my_string)):
+        if (my_string[i] != 'c' and my_string[i] != 'C'):
+            ret += my_string[i]
+    return ret
