@@ -20,3 +20,4 @@ class Square:
         """Funtion definition
         """
 
+        return .__size ** 2
