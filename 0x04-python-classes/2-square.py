@@ -7,6 +7,7 @@ Square Class: Define a Square with private instance
 class Square:
     """ class Square that defines a square
     """
+
     def __init__(self, size=0):
         """ initialize variables """
         if type(size) is not int:
@@ -16,6 +17,6 @@ class Square:
         self.__size = size
   
     def area(self):
-    	"""Funtion definition
-    	"""
-        return (self.__size **2)
+        """Funtion definition
+        """
+
