@@ -22,4 +22,4 @@ class Square:
         """Funtion definition
         """
 
-        return self.size **2
+        return self.__size **2
