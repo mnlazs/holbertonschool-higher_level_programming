@@ -33,7 +33,7 @@ Traceback (most recent call last):
 TypeError: last_name must be a string
 
 Case #5: test first argument being a number
->>> say_my_name(12, "zambrano")
+>>> say_my_name(3, "zambrano")
 Traceback (most recent call last):
 ...
 TypeError: first_name must be a string
