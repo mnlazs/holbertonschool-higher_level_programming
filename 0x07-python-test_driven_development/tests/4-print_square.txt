@@ -1,11 +1,11 @@
-The "print_square" module
+The ``print_square`` module
 ======================
 
-Using "print_square"
+Using ``print_square``
 -------------------
 
 
-The "print_square" module
+The ``print_square`` module
 ======================
 
 Using ``print_square``
