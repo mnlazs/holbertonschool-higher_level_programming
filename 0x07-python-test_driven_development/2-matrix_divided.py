@@ -16,7 +16,7 @@ def matrix_divided(matrix, div):
         raise TypeError(list_error)
     if type(div) is not int and type(div) is not float:
         raise TypeError(div_int_error)
-    if div is 0:
+    if div == 0:
         raise ZeroDivisionError(div_zero_error)
     longitud = len(matrix[0])
     for lista in matrix:
