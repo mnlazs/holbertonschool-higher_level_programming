@@ -1,36 +1,55 @@
-The ``say_my_name`` module
-======================
+Test cases for '3-say_my_name.py'
+=================================
 
-Using ``say_my_name``
--------------------
-
-Write a function that prints My name is <first name> <last name>
-
-    Prototype: def say_my_name(first_name, last_name=""):
-    first_name and last_name must be strings otherwise, raise a TypeError exception with the message first_name must be a string or last_name must be a string
-    You are not allowed to import any module
+Print something using the function
+----------------------------------
 
 >>> say_my_name = __import__('3-say_my_name').say_my_name
->>> say_my_name("Manuel", "Zambrano")
-My name is Manuel Zambrano
->>> say_my_name(None, "Zambrano")
+
+Cases to be evaluated:
+
+Case #1: test zero arguments.
+>>> say_my_name()
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "<stdin>", line 4, in say_my_name
-TypeError: first_name must be a string or last_name must be a string
->>> say_my_name("Manuel", None)
+...
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+Case #2: test arguments being Null
+>>> say_my_name(None, None)
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "<stdin>", line 4, in say_my_name
-TypeError: first_name must be a string or last_name must be a string
->>> say_my_name("Manuel", 8)
+...
+TypeError: first_name must be a string
+
+Case #3: test first argument being Null
+>>> say_my_name(None, "zambrano")
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "<stdin>", line 4, in say_my_name
-TypeError: first_name must be a string or last_name must be a string
->>> say_my_name(6, "Zambrano")
+...
+TypeError: first_name must be a string
+
+Case #4: test second argument being Null
+>>> say_my_name("manuel", None)
 Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "<stdin>", line 4, in say_my_name
-TypeError: first_name must be a string or last_name must be a string
->>>
+...
+TypeError: last_name must be a string
+
+Case #5: test first argument being a number
+>>> say_my_name(12, "zambrano")
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+Case #6: test second argument being a number
+>>> say_my_name("manuel", 98)
+Traceback (most recent call last):
+...
+TypeError: last_name must be a string
+
+Case #7: test the two arguments being numbers
+>>> say_my_name(98, 98)
+Traceback (most recent call last):
+...
+TypeError: first_name must be a string
+
+Case #8: test arguments being strings
+>>> say_my_name("manuel", "zambrano")
+My name is manuel zambrano
