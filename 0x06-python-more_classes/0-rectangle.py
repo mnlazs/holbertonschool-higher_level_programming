@@ -5,7 +5,6 @@
     and raise exceptions if their values are not integers or less than 0.
     """
 
-
 class Rectangle:
     def __init__(self, width=0, height=0):
         self._width = width
