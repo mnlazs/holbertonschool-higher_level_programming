@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Module documentation goes here
+"""
+
+
 class Rectangle:
     """
     This class represents a rectangle with private instance attributes
@@ -43,3 +48,4 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self._height = value
+
