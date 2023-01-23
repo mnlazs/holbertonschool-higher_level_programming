@@ -22,3 +22,4 @@ def text_indentation(text):
         else:
             ls_strip.append(l.lstrip())
     print("".join(ls_strip), end="")
+    
