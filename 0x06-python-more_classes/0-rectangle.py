@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""
+class Rectangle:
+    """
     This class represents a rectangle with private instance attributes
     width and height. It has methods to set and get their values,
     and raise exceptions if their values are not integers or less than 0.
     """
-
-class Rectangle:
     def __init__(self, width=0, height=0):
         self._width = width
         self._height = height
