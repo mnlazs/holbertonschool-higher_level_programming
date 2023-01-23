@@ -1,4 +1,15 @@
 #!/usr/bin/python3
+    """_summary_
+
+    Raises:
+        TypeError: _description_
+        ValueError: _description_
+        TypeError: _description_
+        ValueError: _description_
+
+    Returns:
+        _type_: _description_
+    """
 class Rectangle:
     def __init__(self, width=0, height=0):
         self._width = width
