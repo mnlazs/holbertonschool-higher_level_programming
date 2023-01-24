@@ -3,6 +3,7 @@
 Module documentation goes here
 """
 
+
 class Rectangle:
     """
     This class represents a rectangle with private instance attributes
@@ -11,7 +12,7 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         self._width = width
         self._height = height
-    
+
     """
     Initialize the width and height attributes with the provided values.
     """
@@ -45,14 +46,9 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self._height = value
-        
+
     def area(self):
         return self._width * self._height
 
     def perimeter(self):
         return (self._width + self._height) * 2
-
-r = Rectangle()
-r.width = 10
-r.height = 5
-print(int(r.area()))
