@@ -3,7 +3,6 @@
 Module documentation goes here
 """
 
-
 class Rectangle:
     def __init__(self, width=0, height=0):
         """
@@ -34,7 +33,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self._width = value
+        self._width_ = value
 
     @property
     def height(self):
