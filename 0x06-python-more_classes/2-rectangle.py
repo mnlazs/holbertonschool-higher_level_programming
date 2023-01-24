@@ -51,3 +51,8 @@ class Rectangle:
 
     def perimeter(self):
         return (self._width + self._height) * 2
+
+r = Rectangle()
+r.width = 10
+r.height = 5
+print(int(r.area()))
