@@ -61,4 +61,3 @@ class Rectangle:
             print('#' * self.__width)
         print('#' * self.__width, end='')
         return ""
-    
