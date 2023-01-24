@@ -3,21 +3,18 @@
 Module documentation goes here
 """
 
-
 class Rectangle:
     """
     This class represents a rectangle with private instance attributes
-    width and height. It has methods to set and get their values,
-    and raise exceptions if their values are not integers or less than 0.
+    width and height.
     """
     def __init__(self, width=0, height=0):
         self._width = width
         self._height = height
-
+    
     """
     Initialize the width and height attributes with the provided values.
     """
-
     @property
     def width(self):
         return self._width
@@ -48,3 +45,9 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self._height = value
+        
+    def area(self):
+        return self._width * self._height
+
+    def perimeter(self):
+        return (self._width + self._height) * 2
