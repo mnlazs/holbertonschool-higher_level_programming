@@ -5,38 +5,37 @@ Module documentation goes here
 
 
 class Rectangle:
-    """
-    This class represents a rectangle with private instance attributes
-    width and height. It has methods to set and get their values,
-    and raise exceptions if their values are not integers or less than 0.
-    """
     def __init__(self, width=0, height=0):
+        """
+        Initialize the rectangle with optional width and height
+        :param width: Width of the rectangle
+        :param height: Height of the rectangle
+        """
         self._width = width
         self._height = height
 
-    """
-    Initialize the width and height attributes with the provided values.
-    """
-
     @property
     def width(self):
+        """
+        Retrieve the width of the rectangle
+        :return: Width of the rectangle
+        """
         return self._width
 
-    """
-        Set the value of width attribute, if the value is an integer
-        and greater than 0
-        """
     @width.setter
     def width(self, value):
+        """
+        Set the width of the rectangle
+        :param value: Width of the rectangle
+        :raise TypeError: If width is not an integer
+        :raise ValueError: If width is less than 0
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
         self._width = value
 
-    """
-        Get the value of width attribute
-        """
     @property
     def height(self):
         return self._height
@@ -48,3 +47,11 @@ class Rectangle:
         if value < 0:
             raise ValueError("height must be >= 0")
         self._height = value
+
+    def area(self):
+        return self._width * self._height
+
+    def perimeter(self):
+        if self._width == 0 or self._height == 0:
+            return 0
+        return 2 * (self._width + self._height)
