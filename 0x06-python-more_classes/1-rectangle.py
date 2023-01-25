@@ -7,8 +7,8 @@ class Rectangle:
     def __init__(self, width=0, height=0):
         """
         Initialize the rectangle with optional width and height
-        :param width: Width of the rectangle
-        :param height: Height of the rectangle
+        param width: Width of the rectangle
+        param height: Height of the rectangle
         """
         self._width = width
         self._height = height
