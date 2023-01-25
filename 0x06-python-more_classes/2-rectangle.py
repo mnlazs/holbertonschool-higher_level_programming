@@ -64,5 +64,5 @@ class Rectangle:
                                                                    width)
         return mystr
 
-    def __repr__(self):
-        return ("Rentangle({0}, {1})".format(self.width, self.height))
+ #   def __repr__(self):
+ #       return ("Rentangle({0}, {1})".format(self.width, self.height))
