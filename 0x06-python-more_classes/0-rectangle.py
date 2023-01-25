@@ -22,10 +22,6 @@ class Rectangle:
     def width(self):
         return self._width
 
-    """
-        Set the value of width attribute, if the value is an integer
-        and greater than 0
-        """
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
@@ -33,10 +29,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
         self._width = value
-
-    """
-        Get the value of width attribute
-        """
+        
     @property
     def height(self):
         return self._height
@@ -55,9 +48,9 @@ class Rectangle:
     
     def perimeter(self):
         if self.width == 0 or self.height == 0:
-        return 0
-    perimeter = 2 * (self.width + self.height)
-    return perimeter
+            return 0
+        perimeter = 2 * (self.width + self.height)
+        return perimeter
 
     def __str__(self):
         mystr = ""
