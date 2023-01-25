@@ -63,6 +63,3 @@ class Rectangle:
         mystr = (('#' * self.width) + '\n') * (self.height - 1) + ('#' * self.
                                                                    width)
         return mystr
-
- #   def __repr__(self):
- #       return ("Rentangle({0}, {1})".format(self.width, self.height))
