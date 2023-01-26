@@ -4,9 +4,9 @@ Module with the method Buscar
 """
 
 
-def buscar(objeto):
+def lookup(obj:
     """
     Funcion que retorna el directorio de un objeto
     """
-    atributos = dir(objeto)
+    atributos = dir(obj)
     return atributos
