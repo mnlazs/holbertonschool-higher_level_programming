@@ -1,34 +1,23 @@
 #!/usr/bin/python3
-"""
-    Insert here module comment
-"""
-
-
 def matrix_divided(matrix, div):
-    """ Divide a matrix by a number div """
-    list_error = "matrix must be a matrix (list of lists) of integers/floats"
-    len_error = "Each row of the matrix must have the same size"
-    div_int_error = "div must be a number"
-    div_zero_error = "division by zero"
-    new_matrix = []
-    new_list = []
+    errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix:
-        raise TypeError(list_error)
-    if type(div) is not int and type(div) is not float:
-        raise TypeError(div_int_error)
+        raise TypeError(errorMessage)
+    if not isinstance(matrix, list):
+        raise TypeError(errorMessage)
+    for lists in matrix:
+        if not isinstance(lists, list):
+            raise TypeError(errorMessage)
+        for item in lists:
+            if not isinstance(item, int) and not isinstance(item, float):
+                raise TypeError(errorMessage)
+    for lists in matrix:
+        if len(lists) == 0:
+            raise TypeError(errorMessage)
+    if not isinstance(div, int) and not isinstance(div, float):
+        raise TypeError("div must be a number")
+    if not all(len(lists) == len(matrix[0]) for lists in matrix):
+        raise TypeError("Each row of the matrix must have the same size")
     if div == 0:
-        raise ZeroDivisionError(div_zero_error)
-    longitud = len(matrix[0])
-    for lista in matrix:
-        if type(lista) is not list:
-            raise TypeError(list_error)
-        if len(lista) != longitud:
-            raise TypeError(len_error)
-        for item in lista:
-            if type(item) is not int and type(item) is not float:
-                raise TypeError(list_error)
-            num = item / div
-            new_list.append(round(num, 2))
-        new_matrix.append(new_list)
-        new_list = []
-    return new_matrix
+        raise ZeroDivisionError("division by zero")
+    return [[round(item / div, 2) for item in lists] for lists in matrix]
