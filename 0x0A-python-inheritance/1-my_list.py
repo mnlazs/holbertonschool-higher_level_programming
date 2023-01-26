@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-"""Clase que imprime una lista
+"""Modulo con una clase llamada MyList
 """
 
 
 class MyList(list):
-    """modulo que imprime una lista heredada en orden
+    """clase que imprime una lista heredada en orden
 """
 
 
