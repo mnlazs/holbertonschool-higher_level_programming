@@ -1,12 +1,16 @@
 #!/usr/bin/python3
-"""Modulo con una clase llamada MyList
+"""
+===========================
+Module with class MyList
+===========================
 """
 
 
 class MyList(list):
-    """clase que imprime una lista heredada en orden
-"""
+    """Class with method print_sorted"""
+    pass
 
+    def print_sorted(self):
+        """Methot that sorted a list"""
 
-def print_sorted(self):
-        print(sorted(self))
+        print(sorted(list(self)))
