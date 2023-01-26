@@ -1,26 +1,17 @@
 #!/usr/bin/python3
-"""
-Function to replace some characters with '\n\n'
-"""
+"""text indent"""
 
 
 def text_indentation(text):
-    """
-    Prints a text with 2 new lines after each of these characters: ., ? and :
-    """
-
-    # check if input is a string
-    if type(text) is not str:
+    """text indent"""
+    if not isinstance(text, str):
         raise TypeError("text must be a string")
-    # check if input is not empty
-    if text is None or text.strip() == "":
-        raise ValueError("text can not be None or empty")
-    new_text = ""
-    for i, c in enumerate(text):
-        if c in ".?:":
-            new_text += c + "\n\n"
-            if i+1 < len(text) and text[i+1] == " ":
-                continue
-        else:
-            new_text += c
-    print(new_text)
+
+    for delimeter in "?:.":
+        words = (delimeter + "\n\n").join(
+                [index.strip(" ") for index in words.split(delimeter)])
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testfile("tests/5-text_indentation.txt")
