@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-def buscar(objeto):
-    atributos = dir(objeto)
+def lookup(obj):
+    atributos = dir(obj)
     return atributos
