@@ -4,9 +4,11 @@
 
 
 class BaseGeometry:
-    """Definicion del area,que eleva una excepcion
-"""
+    """Definicion del area,que eleva una excepcion"""
 
 
 def area(self):
-        raise Exception("area() is not implemented")
+    """Public instance method: def area(self): \
+           that raises an Exception
+           """
+    raise Exception("area() is not implemented")
