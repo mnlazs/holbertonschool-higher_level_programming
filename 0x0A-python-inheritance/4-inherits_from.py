@@ -11,8 +11,6 @@ def inherits_from(obj, a_class):
     inherited (directly or indirectly) from the specified class
     """
 
-    if isinstance(obj, a_class):
-        return True
-    if hasattr(obj, '__class__') and issubclass(obj.__class__, a_class):
+    if issubclass(type(obj), a_class) and type(obj) != a_class:
         return True
     return False
