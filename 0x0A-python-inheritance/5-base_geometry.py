@@ -3,5 +3,5 @@
     """
     
     
-class BaseGeometry()
-    Pass
+class BaseGeometry:
+    pass
