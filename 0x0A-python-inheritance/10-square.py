@@ -54,7 +54,11 @@ class Rectangle(BaseGeometry):
 
 
 class Square(Rectangle):
+    """Class Square that inherits from Rectangle"""
     def __init__(self, size):
+         """Instantiation with size \
+        def width and height must be positive integers \
+        """
         if isinstance(self, size):
             super().integer_validator("size", size)
             self.__size = size
