@@ -26,6 +26,11 @@ class BaseGeometry:
 class Rectangle(BaseException):
     """Class Rentacle that inherits from BaseException"""
     def __init__(self, width, height):
+        """Instantiation with width and height: \
+        def __init__(self, width, height)
+        width and height must be positive integers,\
+        validated by integer_validator"""
+
         self.integer_validator("widht", width)
         self.__width = width
         self.__integer_validator("height", height)
