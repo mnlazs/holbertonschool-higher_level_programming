@@ -12,7 +12,7 @@ class BaseGeometry:
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
-        """Public instance method:\
+        """Public instance method:
            def integer_validator(self, name, value):\
            that validates value"""
         if type(value) != int:
@@ -38,10 +38,10 @@ class Rectangle(BaseGeometry):
         """Return the area of the rectangle"""
         return self.__width * self.__height
 
-    def __str__(self):
-        """Return the following rectangle description:\
-        [Rectangle] <width>/<height>"""
-        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
+#    def __str__(self):
+#        """Return the following rectangle description:\
+#        [Rectangle] <width>/<height>"""
+#        return "[Rectangle] {:d}/{:d}".format(self.__width, self.__height)
 
 
 class Square(Rectangle):
@@ -56,4 +56,4 @@ class Square(Rectangle):
 
     def area(self):
         """Return the area of the square"""
-        return self.__size * self.__size
+        return self.__size * 2
