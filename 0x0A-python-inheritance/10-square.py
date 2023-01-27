@@ -1,14 +1,5 @@
 #!/usr/bin/python3
-"""
-   6-base_geometry.py module
-   Class BaseGeometry.
-   Public instance method: \
-   def area(self): that raises an Exception with\
-   the message area() is not implemented.
-   Public instance method:\
-   def integer_validator(self, name, value):\
-   that validates value
-"""
+"""Class BaseGeometry"""
 
 
 class BaseGeometry:
@@ -59,7 +50,7 @@ class Square(Rectangle):
          """Instantiation with size \
         def width and height must be positive integers \
         """
-        if isinstance(self, size):
+    if isinstance(self, size):
             super().integer_validator("size", size)
             self.__size = size
 
