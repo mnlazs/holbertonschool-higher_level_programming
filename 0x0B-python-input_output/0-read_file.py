@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 """
-Funcion que lee un archivo de texto
+    0-read_file
+    Reads a text file (UTF8) and prints it to stdout
 """
 
 
 def read_file(filename=""):
-    """
-Funcion que lee un archivo de texto
-"""
-
-    with open(filename, 'r', encoding='utf-8') as file:
-        print(file.read())
+    """Reads a text file (UTF8) and prints it to stdout"""
+    with open(filename, encoding='utf-8') as f:
+        print(f.read(), end="")
