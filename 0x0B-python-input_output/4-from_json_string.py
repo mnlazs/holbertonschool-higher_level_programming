@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """
-    6-from_json_string.py
     Function that returns an object \
     (Python data structure) represented by a JSON string:
 """
