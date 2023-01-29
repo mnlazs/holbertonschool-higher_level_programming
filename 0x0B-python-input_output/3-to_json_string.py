@@ -8,7 +8,7 @@ import json
 """
     Importacion de un modulo que retorna la representacion
     """
- 
+
 
 def to_json_string(my_obj):
     return json.dumps(my_obj)
