@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 """
-    Funcion que retorna una representacion de Json
+    5-to_json_string.py
+    Returns the JSON representation of an object (string):
 """
-
-
 import json
-"""
-    Importacion de un modulo que retorna la representacion
-    """
 
 
 def to_json_string(my_obj):
+    """Returns the JSON representation of an object (string):"""
     return json.dumps(my_obj)
