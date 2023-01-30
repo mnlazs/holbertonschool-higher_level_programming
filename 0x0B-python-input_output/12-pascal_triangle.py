@@ -3,9 +3,11 @@
 """
 Write a funtion that return a integer list
 """
+
+
 def pascal_triangle(n):
     """Funtion"""
-    
+
     if n <= 0:
         return []
     triangle = []
