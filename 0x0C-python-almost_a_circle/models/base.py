@@ -66,33 +66,7 @@ class Base:
         if cls.__name__ == 'Square':
             instance_class = cls(10, 15)
         instance_class.update(**dictionary)
-        return instance_class 
-    
-    def update(self, *args, **kwargs):
-        '''Method for update all attributes in the class Square'''
-
-        if len(args) > 0 and args:
-            index = 0
-            for i in args:
-                if index == 0:
-                    self.id = i
-                elif index == 1:
-                    self.size = i
-                elif index == 2:
-                    self.x = i
-                elif index == 3:
-                    self.y = i
-                index += 1
-        else:
-            for key, value in kwargs.items():
-                if key == 'id':
-                    self.id = value
-                elif key == 'size':
-                    self.size = value
-                elif key == 'x':
-                    self.x = value
-                elif key == 'y':
-                    self.y = value
+        return instance_class
 
 
     @classmethod
