@@ -68,7 +68,6 @@ class Base:
         instance_class.update(**dictionary)
         return instance_class
 
-
     @classmethod
     def load_from_file(cls):
         '''return a list of instances'''
