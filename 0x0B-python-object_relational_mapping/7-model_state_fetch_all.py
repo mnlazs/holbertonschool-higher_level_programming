@@ -10,7 +10,7 @@ Arguments:
 import sys
 from sqlalchemy import (create_engine)
 from sqlalchemy.orm import Session
-from sqlalchemy.engine.url import _URL
+from sqlalchemy.engine.url import URL
 from model_state import Base, State
 
 if __name__ == "__main__":
