@@ -16,7 +16,6 @@ if __name__ == "__main__":
     mySQL_u = sys.argv[1]
     mySQL_p = sys.argv[2]
     db_name = sys.argv[3]
-    
     searched_name = sys.argv[4]
 
     # By default, it will connect to localhost:3306
