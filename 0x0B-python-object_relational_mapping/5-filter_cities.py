@@ -23,8 +23,8 @@ if __name__ == "__main__":
 
     cur.execute("SELECT cities.name FROM cities JOIN states ON\
     cities.state_id = states.id AND states.name = %s ORDER BY cities.id ASC")
-    
     rows = cur.fetchall()
 
-    for row in rows:
-        print(row)
+    for i in range(len(rows)):
+        print(rows [i][0], end=", " if i + 1 < len(rows) else "")
+    print("")
