@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-"""Script that prints the State object with the name passed as argument from the database hbtn_0e_6_usa"""
+"""Script that prints the State object with\
+the name passed as argument from the\
+database hbtn_0e_6_usa"""
 
 from model_state import Base, State
 from sqlalchemy import create_engine
@@ -29,4 +31,3 @@ if __name__ == '__main__':
 
     # Closing the session
     session.close()
-
