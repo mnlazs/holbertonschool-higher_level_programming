@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Script that lists all `states` where name matches 
+Script that lists all `states` where name matches
 with the argument
 Arguments:
     mysql username (str)
@@ -22,7 +22,9 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=mySQL_u, passwd=mySQL_p, db=db_name)
     cur = db.cursor()
 
-    cur.execute("SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id".format (searched_name))
+    cur.execute("SELECT * FROM states"
+                "WHERE name LIKE BINARY '{}'"
+                "ORDER BY id".format(searched_name))
     rows = cur.fetchall()
 
     for row in rows:
