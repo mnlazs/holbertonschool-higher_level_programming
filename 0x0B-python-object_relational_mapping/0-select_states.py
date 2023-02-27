@@ -10,6 +10,10 @@ Arguments:
 import sys
 import MySQLdb
 
+if len(sys.argv) != 4:
+    print("Usage: {} <mysql username> <mysql password> <database name>".format(sys.argv[0]))
+    sys.exit(1)
+    
 if __name__ == "__main__":
     mySQL_u = sys.argv[1]
     mySQL_p = sys.argv[2]
