@@ -17,7 +17,7 @@ if __name__ == "__main__":
     db_name = sys.argv[3]
 
     # By default, it will connect to localhost:3306
-    db = MySQLdb.connect(host="localhost", port=3306,user=mySQL_u, passwd=mySQL_p, db=db_name)
+    db = MySQLdb.connect(host="localhost", port=3306, user=mySQL_u, passwd=mySQL_p, db=db_name)
     cur = db.cursor()
 
     cur.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%' ORDER BY id")
