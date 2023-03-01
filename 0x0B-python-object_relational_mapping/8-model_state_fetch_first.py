@@ -19,17 +19,18 @@ if __name__ == "__main__":
     mySQL_p = sys.argv[2]
     db_name = sys.argv[3]
 
-    url = {'drivername': 'mysql+mysqldb', 'host': 'localhost',
-           'username': mySQL_u, 'password': mySQL_p, 'database': db_name}
+    url = URL.create(drivername= 'mysql+mysqldb', host= 'localhost',
+                    username= mySQL_u, password= mySQL_p, database= db_name)
 
-    c_url = URL(**url)
-
-    engine = create_engine(URL(**url), pool_pre_ping=True)
+    engine = create_engine(url, pool_pre_ping=True)
     Base.metadata.create_all(engine)
 
     session = Session(bind=engine)
     try:
         first = session.query(State).first()
-        print("{}: {}".format(first.id, first.name))
+        if first is not None:
+            print("{}: {}".format(first.id, first.name))
+        else:
+            print("No se encontraron objetos State")
     except Exception as e:
-        print('Error', e)
+            print('Error', e)
