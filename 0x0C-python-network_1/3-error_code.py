@@ -4,7 +4,8 @@ import urllib.request
 import urllib.error
 import sys
 
-url = sys.argv[1]
+if __name__ == '__main__':
+    url = sys.argv[1]
 """prueba de docs"""
 try:
     with urllib.request.urlopen(url) as response:
