@@ -1,15 +1,18 @@
 #!/usr/bin/python3
-"""ERROR"""
-import urllib.request
-import urllib.error
-import sys
+"""
+Python script
+"""
+
 
 if __name__ == '__main__':
-    url = sys.argv[1]
-"""prueba de docs"""
-try:
-    with urllib.request.urlopen(url) as response:
-        html = response.read().decode('utf-8')
-        print(html)
-except urllib.error.HTTPError as e:
-    print(f"Error code: {e.code}")
+    from urllib.request import Request, urlopen
+    from urllib.error import HTTPError
+    from sys import argv
+
+    req = Request(argv[1])
+    try:
+        with urlopen(req) as f:
+            response = f.read()
+            print(response.decode('utf8'))
+    except HTTPError as e:
+        print("Error code:", e.code)
