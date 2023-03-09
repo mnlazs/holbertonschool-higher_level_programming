@@ -1,11 +1,14 @@
 #!/usr/bin/python3
-"""Fetches header"""
+"""
+script to fetch header
+"""
 
-import urllib.request
-import sys
 
-url = sys.argv[1]
+if __name__ == '__main__':
+    from urllib.request import Request, urlopen
+    from sys import argv
 
-with urllib.request.urlopen(url) as response:
-    headers = response.info()
-    print(headers['X-Request-Id'])
+    req = Request(argv[1])
+    with urlopen(req) as res:
+        header = res.info()
+        print(header['X-Request-Id'])
