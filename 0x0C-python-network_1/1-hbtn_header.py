@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""toma una URL como entrada, y  envíe una solicitud HTTP a esa URL 
-    y muestre el valor de la variable
-    """
+"""Fetches header"""
+
 import urllib.request
 import sys
 
