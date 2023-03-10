@@ -1,24 +1,24 @@
 #!/usr/bin/python3
 """
-Search API
+Script that takes in a letter and sends a POST request to URL with letter param
 """
 
+
 if __name__ == "__main__":
+    from sys import argv
     import requests
-    import sys
 
-if len(sys.argv) > 1:
-    letter = sys.argv[1]
-else:
-    letter = ""
-
-response = requests.post("http://0.0.0.0:5000/search_user", data={'q': letter})
-
-try:
-    data = response.json()
-    if data:
-        print("[{}] {}".format(data.get("id"), data.get("name")))
+    if len(argv) == 1:
+        q = ''
     else:
-        print("ningún resultado")
-except ValueError:
-    print("No es un JSON válido")
+        q = argv[1]
+
+    r = requests.post('http://0.0.0.0:5000/search_user', data={'q': q})
+    try:
+        out = r.json()
+        if out:
+            print('[{}] {}'.format(out['id'], out['name']))
+        else:
+            print('No result')
+    except:
+        print('Not a valid JSON')
