@@ -3,7 +3,6 @@
 Python script
 """
 
-
 if __name__ == '__main__':
     from urllib.request import Request, urlopen
     from urllib.error import HTTPError
