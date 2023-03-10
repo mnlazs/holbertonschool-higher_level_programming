@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-"""Takes in a URL, email address, sends a POST request with email param"""
+"""
+Takes in a URL, email address, sends a POST request with email param
+"""
 
-import sys
-import requests
 
-if __name__ == "__main__":
-    url = sys.argv[1]
-    email = sys.argv[2]
+if __name__ == '__main__':
+    import requests
+    from sys import argv
 
-response = requests.post(url, data={'email': email})
-
-print(response.text)
+    r = requests.post(argv[1], data={'email': argv[2]})
+    print(r.text)
