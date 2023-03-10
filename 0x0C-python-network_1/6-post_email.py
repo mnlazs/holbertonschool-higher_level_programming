@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""comments"""
+"""Takes in a URL, email address, sends a POST request with email param"""
 
 import sys
 import requests
