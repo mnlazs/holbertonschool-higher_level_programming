@@ -1,13 +1,12 @@
 #!/usr/bin/python3
-"""
-Python script for requests
-"""
+"""comments"""
 
-import requests
 import sys
+import requests
 
-url = sys.argv[1]
-email = sys.argv[2]
+if __name__ == "__main__":
+    url = sys.argv[1]
+    email = sys.argv[2]
 
 response = requests.post(url, data={'email': email})
 
