@@ -1,14 +1,16 @@
+
 #!/usr/bin/python3
 """
 Python script for requests
 """
 
-import requests
-import sys
 
-url = sys.argv[1]
-email = sys.argv[2]
+if __name__ == "__main__":
+    import requests
+    from sys import argv
 
-response = requests.post(url, data={'email': email})
-
-print(response.text)
+    try:
+        req = requests.get(argv[1])
+        print(req.headers['X-Request-Id'])
+    except KeyError:
+        pass
