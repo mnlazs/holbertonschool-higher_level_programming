@@ -1,19 +1,19 @@
 #!/usr/bin/node
 
-const arg = process.argv[2];
+const size = parseInt(process.argv[2]);
 
-if (!Number.isInteger(parseInt(arg))) {
-  console.log('Missing size');
-} else {
-  const n = parseInt(arg);
-  let square = '';
+if (size) {
+  for (let i = 0; i < size; ++i) {
+    let j = 0;
 
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < n; j++) {
-      square += 'X';
+    for (; j < size; ++j) {
+      process.stdout.write('X');
     }
-    square += '\n';
-  }
 
-  console.log(square);
+    if (j === size) {
+      console.log('');
+    }
+  }
+} else {
+  console.log('Missing size');
 }
