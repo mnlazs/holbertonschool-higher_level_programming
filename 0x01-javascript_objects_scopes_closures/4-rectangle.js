@@ -1,33 +1,35 @@
 #!/usr/bin/node
-// Write a class Rectangle that
 
-class Rectangle {
-  constructor (w, h) {
-    if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
-      return {}; // devuelve un objeto vacío si las dimensiones no son válidas
+// - Rotate and Double the width and height of the Rectangle
+
+module.exports = class Rectangle {
+  constructor (width, height) {
+    if (typeof width === 'number' && typeof height === 'number' && width > 0 && height > 0) {
+      this.width = width;
+      this.height = height;
     }
-    this.width = w;
-    this.height = h;
   }
 
-  print () {
-    let row = '';
-    for (let i = 0; i < this.width; i++) {
-      row += 'X';
-    }
-    for (let i = 0; i < this.height; i++) {
-      console.log(row);
+  print (char = 'X') {
+    for (let i = 0; i < this.height; ++i) {
+      let j = 0;
+
+      for (; j < this.width; ++j) {
+        process.stdout.write(char);
+      }
+
+      if (j === this.width) {
+        console.log('');
+      }
     }
   }
 
   rotate () {
-    const temp = this.width;
-    this.width = this.height;
-    this.height = temp;
+    [this.width, this.height] = [this.height, this.width];
   }
 
   double () {
     this.width *= 2;
     this.height *= 2;
   }
-}
+};
