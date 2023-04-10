@@ -1,15 +1,11 @@
 #!/usr/bin/node
 // Write a class Rectangle that
-class Rectangle {
-    constructor(w, h) {
-      if (w <= 0 || h <= 0 || !Number.isInteger(w) || !Number.isInteger(h)) {
-        // Si w o h no son números enteros positivos, crea un objeto vacío.
-        return {};
-      } else {
-        // Si w y h son números enteros positivos, inicializa los atributos de instancia.
-        this.width = w;
-        this.height = h;
-      }
+
+module.exports = class Rectangle {
+  constructor (width, height) {
+    if (typeof width === 'number' && typeof height === 'number' && width > 0 && height > 0) {
+      this.width = width;
+      this.height = height;
     }
   }
-  
+};
