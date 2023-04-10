@@ -1,4 +1,9 @@
 #!/usr/bin/node
-// Write an empty class Rectangle that defines a rectangle.
 
-module.exports = class Rectangle { };
+class Rectangle{
+    def __init__(self, w, h){
+        self.width = w
+        self.height = h
+    }
+
+}
