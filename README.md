@@ -25,7 +25,7 @@ High-level programming is an approach to software development that focuses on ab
   ### [Web Jquery](./0x03-javascript-web_jquery)
   ### [More Data Structure](./0x03-python-more_data_structures)
   ### [Python Classes](./0x04-python-classes)
-  ### [Python more CLasses](./0x06-python-more_classes)
+  ### [Python more Classes](./0x06-python-more_classes)
 
 ## Contact :postbox:	
 For any inquiries or feedback, please reach out to me at mnl.azs@gmail.com.
