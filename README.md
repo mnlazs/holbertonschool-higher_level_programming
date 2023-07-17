@@ -13,13 +13,19 @@ High-level programming is an approach to software development that focuses on ab
 
 ## Proyects:computer:
 
-  ### [Developer_tools](./developer_tools)
-  ### [Flexbox](./flexbox)
-  ### [Sass](./sass_scss)
-  ### [Accessibility](./accessibility)
-  ### [Form](./form)
-  ### [Bootstrap](./Bootstrap)
-  ### [Javascript](./Javascript_advanced)
+  ### [SQL](./0x00-SQL_introduction)
+  ### [Javascript](./0x00-javascript-warm_up)
+  ### [Python](./0x00-python-hello_world)
+  ### [SQL II part](./0x01-SQL_more_queries)
+  ### [Scope and Closures](./0x01-javascript_objects_scopes_closures)
+  ### [Pyhton Loops](./0x01-python-if_else_loops_functions)
+  ### [Python Import Modules](./0x01-python-import_modules)
+  ### [Web Scraping](./0x02-javascript-web_scraping)
+  ### [Data Structure](./0x02-python-data_structures)
+  ### [Web Jquery](./0x03-javascript-web_jquery)
+  ### [More Data Structure](./0x03-python-more_data_structures)
+  ### [Python Classes](./0x04-python-classes)
+  ### [Python more CLasses](./0x06-python-more_classes)
 
 ## Contact :postbox:	
 For any inquiries or feedback, please reach out to me at mnl.azs@gmail.com.
