@@ -25,7 +25,13 @@ High-level programming is an approach to software development that focuses on ab
   ### [Web Jquery](./0x03-javascript-web_jquery)
   ### [More Data Structure](./0x03-python-more_data_structures)
   ### [Python Classes](./0x04-python-classes)
-  ### [Python more Classes](./0x06-python-more_classes)
+  ### [Test Driven](./0x07-python-test_driven_development)
+  ### [Everything is an object](./0x09-python-everything_is_object)
+  ### [Inheritance](./0x0A-python-inheritance)
+  ### [Imput and Output](./0x0B-python-input_output)
+  ### [Relational mapping](./0x0B-python-object_relational_mapping)
+  ### [Almost a circle](./0x0C-python-almost_a_circle)
+  ### [Network](./0x0C-python-network_1)
 
 ## Contact :postbox:	
 For any inquiries or feedback, please reach out to me at mnl.azs@gmail.com.
